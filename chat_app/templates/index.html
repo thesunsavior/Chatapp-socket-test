@@ -8,8 +8,8 @@
         {% if title %}
             <title>{{ title }}</title>
         {% endif %}
-        
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -21,7 +21,11 @@
         </div> -->
 
         <div class="chat-box">
-            <ul></ul>
+            <ul class="chat-screen">
+                <li class="message">
+                    Hello mot ngay that dep nha
+                </li>
+            </ul>
             <input type="text" class="chat-entry" placeholder="Enter a Message">
         </div>
     </body>
