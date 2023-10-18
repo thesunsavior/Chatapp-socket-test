@@ -6,7 +6,7 @@ body {
 
 
 .chat-box {
-    display: flex;
+    display: none;
     width: 500px;
     height: 300px;
     margin: auto;
@@ -34,9 +34,32 @@ body {
     height: 60%;
     background-color: white;
     border: 1px solid green;
+    padding: 10px;
 }
 
 .message{
     list-style: none;
     font-size: 16px;
+}
+
+.system-message{
+    color: red;
+    font-size: 20px;
+    list-style: none;
+}
+
+.user {
+    font-weight: bold;
+    color: grey;
+}
+
+.login-box{
+    width:  20%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }

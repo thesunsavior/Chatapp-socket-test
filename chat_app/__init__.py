@@ -8,6 +8,7 @@ app.config.from_object(Configuration)
 socketio = SocketIO(app)
 
 from chat_app import routes
+from chat_app import events
 
 if __name__ == "__main__":
     socketio.run(app)
